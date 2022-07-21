@@ -49,8 +49,10 @@ public class NotificationService {
                 (key, emitter) -> {
                     // 데이터 캐시 저장(유실된 데이터 처리하기 위함)
                     emitterRepository.saveEventCache(key, notification);
+                    System.out.println("안녕한가");
                     // 데이터 전송
-//                    sendToClient(emitter, key, NotificationResponse.from(notification));
+                    sendToClient(emitter, key, notification);
+                    System.out.println("헬로");
                 }
         );
     }

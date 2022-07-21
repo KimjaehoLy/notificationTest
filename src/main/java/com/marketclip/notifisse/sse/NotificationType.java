@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public enum NotificationType {
 
-    MARKETCLIP(NotificationTypes.MARKETCLIP),
+    PERMISSION(NotificationTypes.PERMISSION),
     KAKAO(NotificationTypes.KAKAO),
     NAVER(NotificationTypes.NAVER);
 
@@ -16,7 +16,7 @@ public enum NotificationType {
     }
 
     public static class NotificationTypes{
-        public static final String MARKETCLIP = "TYPE_MARKETCLIP";
+        public static final String PERMISSION = "granted";
         public static final String KAKAO = "TYPE_KAKAO";
         public static final String NAVER = "TYPE_NAVER";
     }

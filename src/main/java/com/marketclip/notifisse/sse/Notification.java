@@ -66,4 +66,17 @@ public class Notification {
     public String getUrl() {
         return url.getUrl();
     }
+
+    @Override
+    public String toString() {
+        return "Notification{" +
+                "id=" + id +
+                ", content=" + content +
+                ", url=" + url +
+                ", review=" + review +
+                ", isRead=" + isRead +
+                ", notificationType=" + notificationType +
+                ", receiver=" + receiver +
+                '}';
+    }
 }
